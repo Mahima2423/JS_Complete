@@ -48,3 +48,27 @@ const myfun = function() {
     10. function        function**
 
 */
+
+// Memory => Stack-> Primitive datatypes  ,  Heap-> Non-Primitive
+
+let myName = "mahima"
+let myAnotherName = "mahima"
+
+myAnotherName = "harshit"
+console.log(myName);            // mahima
+console.log(myAnotherName);     // harshit
+
+let obj1= {
+    name : "sara",
+    age : 24,
+};
+
+let obj2 = obj1
+obj2.name = "hetal"
+
+console.log(obj1.name)      // hetal
+console.log(obj2.name)      // hetal
+
+
+// Stack -> we get the copy of the original value
+// Heap -> we get the reference of the original value
